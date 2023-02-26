@@ -1,0 +1,14 @@
+{
+  "plugins": ["jasmine", "protractor"],
+  "extends": ["airbnb", "plugin:jasmine/recommended", "plugin:protractor/recommended"],
+  "rules": {
+    "func-names": ["error", "never"],
+    "linebreak-style": 0,
+    "no-console": "off",
+    "import/newline-after-import": 0
+  },
+  "env": {
+    "jasmine": true
+  }
+}
+

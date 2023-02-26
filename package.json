@@ -1,0 +1,27 @@
+{
+  "name": "optical-counter",
+  "version": "1.0.0",
+  "description": "receives a picture of a counter like water or electricity counter, extracts the numbers and posts the numbers to an endpoint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index",
+    "start:dev": "node_modules/nodemon/bin/nodemon.js"
+  },
+  "author": "Gernot H. Reichel",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "tesseract.js": "^4.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^2.0.20"
+  }
+}
