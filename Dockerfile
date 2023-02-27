@@ -1,7 +1,7 @@
 FROM node:19-alpine
 
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /usr/local/src/optical-counter
 
 # take the package.json only
 COPY package.json ./
