@@ -6,6 +6,11 @@ const moment = require('moment');
 const UPLOAD_DIR = './upload';
 const IMAGE_PREFIX = 'image';
 
+// make sure UPLOAD_DIR exists
+if (!fs.existsSync(UPLOAD_DIR)){
+    fs.mkdirSync(UPLOAD_DIR);
+}
+
 /**
  * curl -X POST http://localhost:30100/api/image/cleanup
  *
