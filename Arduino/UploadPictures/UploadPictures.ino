@@ -5,7 +5,7 @@
 #define WIFI_SSID       "WLAN Kabel"
 #define WIFI_PASSWORD   "57002120109202250682"
 
-#define SERVER_HOSTNAME "dockerpi"
+#define SERVER_HOSTNAME "192.168.178.62"
 #define SERVER_PATHNAME "/api/image/upload"
 #define SERVER_PORT     30100
 
@@ -212,7 +212,7 @@ void uploadImage(camera_fb_t * frameBuffer) {
   String getBody;
 
   /* ---------- connect to server ---------------- */
-  Serial.print("Connect server...");
+  Serial.print("Connect server (");Serial.print(SERVER_HOSTNAME);Serial.print(":");Serial.print(SERVER_PORT);Serial.print(") ...");
   if (!client.connect(SERVER_HOSTNAME, SERVER_PORT)) {
     Serial.println("failed!");
     return;
