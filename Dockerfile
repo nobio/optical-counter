@@ -8,7 +8,7 @@ WORKDIR /usr/local/src/optical-counter
 COPY package.json ./
 
 # install dependencies (but only those needed for production)
-RUN npm install --only=production --omit=dev
+RUN npm install --only=production
 
 # Bundle app source
 COPY . .
