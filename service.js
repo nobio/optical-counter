@@ -42,7 +42,6 @@ exports.cleanup = (req, res) => {
  */
 exports.uploadPhoto = (req, res) => {
   console.log(req.headers);
-
   const filename = `${IMAGE_PREFIX}-${moment().format('YYYY-MM-DD_HH-mm-ss')}.jpeg`;
   fs.writeFileSync(`${UPLOAD_DIR}/${filename}`, req.rawBody, 'binary');
 
