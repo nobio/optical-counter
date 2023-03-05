@@ -60,6 +60,6 @@ jobs:
           context: .
           push: true
           tags: ${{ steps.meta.outputs.tags }}
-
+          platforms: linux/arm/v7
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
