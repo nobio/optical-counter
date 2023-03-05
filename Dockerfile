@@ -8,6 +8,8 @@ WORKDIR /usr/src/app
 COPY package.json ./
 
 # Debugging
+RUN which node
+RUN which npm
 RUN node --version
 RUN npm --version
 RUN npm list
