@@ -2,7 +2,7 @@
 FROM node:16
 
 # Create app directory
-WORKDIR /usr/local/src/optical-counter
+WORKDIR /usr/src/app
 
 # take the package.json only
 COPY package.json ./

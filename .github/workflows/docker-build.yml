@@ -38,7 +38,7 @@ jobs:
             type=ref,event=tag
             type=ref,event=pr
 
-      - name: Timetracker ${{ matrix.node-version }}
+      - name: Optical Counter ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
