@@ -14,3 +14,7 @@ RUN npm install --only=production
 COPY . .
 
 CMD [ "npm", "start" ]
+
+
+# docker build --platform linux/arm/v7 --no-cache -t nobio/optical-counter:test .
+# docker push nobio/optical-counter:test
