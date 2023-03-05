@@ -8,11 +8,11 @@ WORKDIR /usr/src/app
 COPY package.json ./
 
 # Debugging
-RUN which node
-RUN which npm
-RUN node --version
-RUN npm --version
-RUN npm list
+#RUN which node
+#RUN which npm
+#RUN node --version
+#RUN npm --version
+#RUN npm list
 
 # install dependencies (but only those needed for production)
 RUN npm install --only=production
