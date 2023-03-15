@@ -36,7 +36,7 @@ exports.cleanup = (req, res) => {
 };
 
 /**
- * curl -X POST http://localhost:30100/api/image/upload -d
+ * curl -X POST http://localhost:30100/api/image/upload
  * @param {*} req
  * @param {*} res
  */

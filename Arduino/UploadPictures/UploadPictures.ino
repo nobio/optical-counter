@@ -5,7 +5,8 @@
 #define WIFI_SSID       "WLAN Kabel"
 #define WIFI_PASSWORD   "57002120109202250682"
 
-#define SERVER_HOSTNAME "192.168.178.62"
+//#define SERVER_HOSTNAME "192.168.178.62" // dockerpi
+#define SERVER_HOSTNAME "linbook"
 #define SERVER_PATHNAME "/api/image/upload"
 #define SERVER_PORT     30100
 
